@@ -21,7 +21,6 @@ module ReportClosedTickets
     pdf_sheet = PDFKit.new(render_content(ticket_json), margin_top: '1.25in', page_size: 'Letter')
     pdf_sheet.stylesheets << css_path
     # For test the file
-    pdf_sheet.to_file("#{Rails.root}/public/file.pdf")
     pdf_sheet.to_pdf
   end
 
