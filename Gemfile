@@ -6,6 +6,7 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 #User allow rest api auth
 gem 'devise_token_auth'
+gem 'omniauth'
 
 gem 'mysql2'
 # Use Puma as the app server
