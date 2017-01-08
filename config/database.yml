@@ -9,8 +9,9 @@ development:
   pool: 5
   timeout: 5000
   reconnect: false
-  username: root
-  host: localhost
+  username: bundd9uwzoj5eyt6
+  password: oosg4s8nq9g1egoh
+  host: qbct6vwi8q648mrn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
   port: 3306
   database: support_database
 
