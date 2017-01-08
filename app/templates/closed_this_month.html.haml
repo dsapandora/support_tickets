@@ -1,0 +1,52 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %link{:href => "tickets.css", :rel => "stylesheet", :type => "text/css"}
+      %title Tickets Closed This month
+
+  %body
+    #mainInner
+      #contents
+        .title Ticket Closed this month for all user.
+        %p Date: #{Date.today}
+        .title Support Ticket list
+        %br/
+        %table#tableborder{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "800", :align => "center"}
+          %tr
+            %td{:valign => "top", :width => "89"}
+              %strong
+                Ticket ID.
+            %td{:valign => "top", :width => "394"}
+              %strong
+                Question
+            %td{:valign => "top", :width => "117"}
+              %strong
+                Customer
+            %td{:valign => "top", :width => "117"}
+              %strong
+                Responses Count
+            %td{:valign => "top", :width => "117"}
+              %strong
+                Time elapsed
+            %td{:valign => "top", :width => "217"}
+              %strong
+                Date
+          - tickets.each do |ticket|
+            %tr
+              %td{:valign => "top"}
+                #{ticket[:id]}
+              %td{:valign => "top", :width => "89"}
+                %strong
+                  #{ticket[:question]}
+              %td{:valign => "top", :width => "394", :align => "center"}
+                #{ticket[:customer_name]}
+              %td{:valign => "top", :width => "117", :align => "center"}
+                #{ticket[:response_count]}
+              %td{:valign => "top", :width => "117", :align => "center"}
+                #{ticket[:time_elapsed]}
+              %td{:valign => "top", :width => "217", :align => "center"}
+                #{ticket[:created_at]}
+        %br/
+        %br/
+    %h1.break

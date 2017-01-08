@@ -12,7 +12,6 @@ gem 'omniauth'
 gem 'sendgrid-ruby'
 # debbug issues with pry
 
-
 gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
@@ -40,6 +39,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'cucumber'
 gem 'pdfkit'
+gem 'haml'
 gem 'wkhtmltopdf-binary'
 gem 'sendgrid-ruby'
 
