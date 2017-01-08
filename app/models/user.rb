@@ -5,10 +5,10 @@ class User < ActiveRecord::Base
   :confirmable, :omniauthable
   include DeviseTokenAuth::Concerns::User
   belongs_to :role
-  before_create :set_default_role
+  before_create :default_role
 
   private
-  def set_default_role
+  def default_role
     self.role ||= Role.find_by_name('customer')
   end
 end
