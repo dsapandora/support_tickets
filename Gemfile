@@ -8,6 +8,12 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'devise_token_auth'
 gem 'omniauth'
 
+# use sengrid, I am just to lazy to make my own smtp
+gem 'sendgrid-ruby'
+# debbug issues with pry
+gem 'pry'
+
+
 gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'

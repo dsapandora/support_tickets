@@ -26,5 +26,6 @@ module SupportTicket
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    config.stripe.publishable_key = 'pk_test_w0WjoUFjg0B4w1L1e4ZTTaV5'
   end
 end
