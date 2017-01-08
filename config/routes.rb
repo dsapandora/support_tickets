@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'closed_tickets/send_report'
+
   resources :statuses
   resources :responses
   resources :tickets
