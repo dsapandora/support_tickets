@@ -16,7 +16,7 @@ class TicketsController < ApplicationController
   # POST /tickets.json
   def create
     @ticket = Ticket.new(ticket_params)
-
+    @ticket.status_id = Status.find_by_name('open').id
     if @ticket.save
       render :show, status: :created, location: @ticket
     else
