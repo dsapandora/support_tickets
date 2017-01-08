@@ -11,7 +11,6 @@ gem 'omniauth'
 # use sengrid, I am just to lazy to make my own smtp
 gem 'sendgrid-ruby'
 # debbug issues with pry
-gem 'pry'
 
 
 gem 'mysql2'
@@ -49,6 +48,7 @@ gem 'sendgrid-ruby'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry'
 end
 
 group :development do
