@@ -1,4 +1,7 @@
 class ClosedTicketsController < ApplicationController
+  before_action :set_user_by_token
+  before_action :authenticate_user!
+  
   def send_report
     user = User.find(user_params[:user_id])
     TicketReportMailer.report_email(user).deliver!

@@ -1,5 +1,7 @@
 class TicketsController < ApplicationController
   before_action :set_ticket, only: [:show, :update, :destroy]
+  before_action :set_user_by_token
+  before_action :authenticate_user!
 
   # GET /tickets
   # GET /tickets.json

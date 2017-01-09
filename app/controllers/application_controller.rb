@@ -1,7 +1,5 @@
 class ApplicationController < ActionController::API
   include DeviseTokenAuth::Concerns::SetUserByToken
-  before_action :set_user_by_token
-  before_action :authenticate_user!
 
   def set_user_by_token(mapping=nil)
     # determine target authentication class
