@@ -10,9 +10,7 @@ gem 'omniauth'
 
 # use sengrid, I am just to lazy to make my own smtp
 gem 'sendgrid-ruby'
-gem 'pg'
 # debbug issues with pry
-gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -43,7 +41,9 @@ gem 'haml'
 gem 'wkhtmltopdf-binary'
 gem 'sendgrid-ruby'
 
-
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -53,6 +53,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  gem 'mysql2'
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

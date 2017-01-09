@@ -114,6 +114,7 @@ GEM
       rack (>= 1.0, < 3)
     orm_adapter (0.5.0)
     pdfkit (0.8.2)
+    pg (0.19.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -211,6 +212,7 @@ DEPENDENCIES
   mysql2
   omniauth
   pdfkit
+  pg
   pry
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
