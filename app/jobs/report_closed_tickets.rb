@@ -9,7 +9,6 @@ module ReportClosedTickets
         customer_name: ticket.user.name,
         response_count: ticket.responses.count,
         # Asumming you last update in the ticket is when you close it
-        time_elapsed: (ticket.updated_at - ticket.created_at).days,
         created_at: ticket.created_at
       }
     end
