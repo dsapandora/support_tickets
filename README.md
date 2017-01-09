@@ -22,3 +22,46 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+API_TEST: http://globalsupport.herokuapp.com/
+
+POST TICKETS
+parameters: 
+user_id
+question
+
+
+POST RESPONSE
+Parameters:
+user_id
+ticket_id
+
+
+POST LOGIN
+parameters:
+email
+password
+----
+access-token
+client
+
+DELETE LOGOUT
+parameters:
+uid
+access-token
+client
+
+POST CREATE USER
+parameters:
+name
+nickname
+email
+password
+password-confirmation
+
+
+GET SEND PDF REPORT
+
+The access-token can be sended in the hearder or inside the json request. 
+
+
