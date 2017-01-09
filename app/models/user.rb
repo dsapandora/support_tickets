@@ -5,4 +5,9 @@ class User < ActiveRecord::Base
   :confirmable, :omniauthable
   include DeviseTokenAuth::Concerns::User
   belongs_to :role
+
+  def confirmation_required?
+    false
+  end
+
 end

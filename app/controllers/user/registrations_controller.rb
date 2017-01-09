@@ -10,6 +10,7 @@ class User::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     @user = User.new(user_params)
+    @user.skip_confirmation!
     @user.role_id = Role.find_by_name('customer').id
     if @user.save
       render json: { id: @user.id }, status: :created
