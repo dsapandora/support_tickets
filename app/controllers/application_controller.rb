@@ -1,6 +1,10 @@
 class ApplicationController < ActionController::API
   include DeviseTokenAuth::Concerns::SetUserByToken
 
+  def only_support_agent
+    @current_user.present? && @current_user.support?
+  end
+
   def set_user_by_token(mapping=nil)
     # determine target authentication class
     #gets the headers names, which was set in the initialize file

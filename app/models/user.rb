@@ -10,4 +10,8 @@ class User < ActiveRecord::Base
     false
   end
 
+  def support?
+    self.role_id == Role.find_by_name('support_agent').id
+  end
+
 end
