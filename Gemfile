@@ -11,7 +11,6 @@ gem 'omniauth'
 # use sengrid, I am just to lazy to make my own smtp
 gem 'sendgrid-ruby'
 # debbug issues with pry
-gem 'pg'
 gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
