@@ -33,14 +33,17 @@ Request parameters:
  }
 ```
 Response_parameter:
-```{ 
-access-token: <sytem_token>
+
+```
+{ 
+  access-token: <sytem_token>,
  client: <json with the client info>
  }
 ```
 
 DELETE LOGOUT
 parameters:
+
 ```
 {
 uid: <user_id>
