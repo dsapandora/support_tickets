@@ -1,7 +1,5 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![System Diagram](https://github.com/dsapandora/support_tickets/blob/master/support_ticket.png?raw=true)
 
 Things you may want to cover:
 
