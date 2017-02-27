@@ -48,15 +48,18 @@ access-token: <token>
 client: <client info>
 }
 ```
+
 POST CREATE USER
 parameters:
-
-name
-nickname
-email
-password
-password-confirmation
-
+```
+{
+name: <name>,
+nickname : <alias>,
+email: <email for login>,
+password: <password>,
+password-confirmation: <password confirmation>
+}
+```
 
 GET SEND_PDF_REPORT
 
