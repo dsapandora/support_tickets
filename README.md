@@ -25,21 +25,32 @@ Parameters:
 
 
 POST LOGIN
-parameters:
-email
-password
-----
-access-token
-client
+Request parameters:
+```
+ { 
+  email: <user_email>
+  password: <user_password>
+ }
+```
+Response_parameter:
+```{ 
+access-token: <sytem_token>
+ client: <json with the client info>
+ }
+```
 
 DELETE LOGOUT
 parameters:
-uid
-access-token
-client
-
+```
+{
+uid: <user_id>
+access-token: <token>
+client: <client info>
+}
+```
 POST CREATE USER
 parameters:
+
 name
 nickname
 email
@@ -47,7 +58,7 @@ password
 password-confirmation
 
 
-GET SEND PDF REPORT
+GET SEND_PDF_REPORT
 
 The access-token can be sended in the hearder or inside the json request. 
 
